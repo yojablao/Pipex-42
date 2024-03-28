@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yojablao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 23:08:21 by yojablao          #+#    #+#             */
-/*   Updated: 2023/11/06 23:13:04 by yojablao         ###   ########.fr       */
+/*   Created: 2023/11/11 21:56:08 by yojablao          #+#    #+#             */
+/*   Updated: 2023/11/11 21:56:08 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	ft_memcmp(const void	*s1, const void	*s2, size_t	n)
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	size_t				i;
-	unsigned char		*p2;
-	unsigned char		*p1;
+	size_t	i;
 
-	p2 = (unsigned char *)s2;
-	p1 = (unsigned char *)s1;
 	i = 0;
-	while (i < n)
+	while (i < n && (str2[i] || str1[i]))
 	{
-		if (p1[i] != p2[i])
-		{
-			return (p1[i] - p2[i]);
-		}
+		if (str1[i] != str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 		i++;
 	}
 	return (0);

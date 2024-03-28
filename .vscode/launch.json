@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/yojablao/Documents/untitled folder 2/pipex/Pipex-42",
+      "program": "/Users/yojablao/Documents/untitled folder 2/pipex/Pipex-42/build/Debug/outDebug"
+    }
+  ]
+}
