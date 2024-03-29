@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 06:45:09 by yojablao          #+#    #+#             */
-/*   Updated: 2024/03/28 03:28:15 by yojablao         ###   ########.fr       */
+/*   Updated: 2024/03/29 06:27:14 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	child(t_pipe lol, char **envp, int *end)
 
 	fd = open(lol.in, O_RDONLY, 0777);
 	if (fd == -1)
-		return(perror("readfile"), exit(1));
+		return (perror("readfile"), exit(1));
 	dup2 (end[1], 1);
 	dup2 (fd, 0);
 	close (end[0]);
@@ -70,9 +70,10 @@ void	pip(t_pipe pex, char **envp)
 int	main(int c, char **v, char **envp)
 {
 	t_pipe	pex;
+
 	if (!envp)
 		exit(0);
-	if (c == 5) 
+	if (c == 5)
 	{
 		pex.in = v[1];
 		pex.out = v[4];

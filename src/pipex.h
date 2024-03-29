@@ -6,14 +6,12 @@
 /*   By: yojablao <yojablao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 06:45:13 by yojablao          #+#    #+#             */
-/*   Updated: 2024/03/28 01:25:39 by yojablao         ###   ########.fr       */
+/*   Updated: 2024/03/29 06:27:28 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PIPEX_H
 # define PIPEX_H
-
-#include "track_leaks.h"
 
 # include <stdio.h>
 # include <stdlib.h>
